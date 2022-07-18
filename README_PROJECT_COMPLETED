@@ -1,0 +1,99 @@
+~/SolBoot/lesson8/08-Tokenized-Votes-live-lesson/Project$ yarn ts-node scripts/deployment.ts pizza popcorn lasagna
+Using address 0x4cd3400fbb3fA0Fb8Dc3d265ECA079938c3220F0
+Wallet balance 9.953491661282808
+Proposals: 
+Proposal N. 1: pizza
+Proposal N. 2: popcorn
+Proposal N. 3: lasagna
+Deploying myToken contract
+Awaiting confirmations
+Completed
+Contract deployed at 0xd1028e56929e88f573A4DAe47aB528A09F98fA82
+100 tokens minted for 0x4cd3400fbb3fA0Fb8Dc3d265ECA079938c3220F0
+Self- Delegating to 0x4cd3400fbb3fA0Fb8Dc3d265ECA079938c3220F0
+Self-delegation succeeded. 
+Deploying CustomBallot contract
+Awaiting confirmations
+Completed
+Contract deployed at 0xC19878d3598826bD2EadE08b4b2f4117ba5D6072
+
+
+
+~/SolBoot/lesson8/08-Tokenized-Votes-live-lesson/Project$ yarn ts-node scripts/getVotes.ts 0xd1028e56929e88f573A4DAe47aB528A09F98fA82 0x4cd3400fbb3fA0Fb8Dc3d265ECA079938c3220F0
+Using address 0x4cd3400fbb3fA0Fb8Dc3d265ECA079938c3220F0
+Wallet balance 9.945851763747154
+Attaching ballot contract interface to address 0xd1028e56929e88f573A4DAe47aB528A09F98fA82
+Printing voting power: 
+The account 0x4cd3400fbb3fA0Fb8Dc3d265ECA079938c3220F0 has a voting power of 100000000000000000000. 
+
+
+~/SolBoot/lesson8/08-Tokenized-Votes-live-lesson/Project$ yarn ts-node scripts/castVote.ts 0xC19878d3598826bD2EadE08b4b2f4117ba5D6072 1 1
+Using address 0x4cd3400fbb3fA0Fb8Dc3d265ECA079938c3220F0
+Wallet balance 9.938211974211502
+Attaching ballot contract interface to address 0xC19878d3598826bD2EadE08b4b2f4117ba5D6072
+Casting a vote
+Awaiting confirmations
+Transaction completed. Hash: 0x1366f1adcaeaae86ab7918e071f1351e29c08d51ec0e6f8a50a4fa82cfc8cca8
+
+
+
+~/SolBoot/lesson8/08-Tokenized-Votes-live-lesson/Project$ yarn ts-node scripts/getVotes.ts 0xd1028e56929e88f573A4DAe47aB528A09F98fA82 0x4cd3400fbb3fA0Fb8Dc3d265ECA079938c3220F0
+Using address 0x4cd3400fbb3fA0Fb8Dc3d265ECA079938c3220F0
+Wallet balance 9.938082372710896
+Attaching ballot contract interface to address 0xd1028e56929e88f573A4DAe47aB528A09F98fA82
+Printing voting power: 
+The account 0x4cd3400fbb3fA0Fb8Dc3d265ECA079938c3220F0 has a voting power of 100000000000000000000. 
+
+
+
+
+~/SolBoot/lesson8/08-Tokenized-Votes-live-lesson/Project$ yarn ts-node scripts/queryProposals.ts 0xC19878d3598826bD2EadE08b4b2f4117ba5D6072
+Using address 0x4cd3400fbb3fA0Fb8Dc3d265ECA079938c3220F0
+Wallet balance 9.938082372710896
+Attaching ballot contract interface to address 0xC19878d3598826bD2EadE08b4b2f4117ba5D6072
+Here are the proposals associated with their number of votes : 
+The proposal number 0 is pizza and it has 0 votes in the ballot
+The proposal number 1 is popcorn and it has 1 votes in the ballot
+The proposal number 2 is lasagna and it has 0 votes in the ballot
+We have seen all the array values.
+
+
+
+~/SolBoot/lesson8/08-Tokenized-Votes-live-lesson/Project$ yarn ts-node scripts/delegateVotes.ts 0x4cd3400fbb3fA0Fb8Dc3d265ECA079938c3220F0 0xd1028e56929e88f573A4DAe47aB528A09F98fA82
+Using address 0x75940107CB4FF33F41178C3e9958944052A856d9
+Wallet balance 9.999751095998839
+Attaching ballot contract interface to address 0x4cd3400fbb3fA0Fb8Dc3d265ECA079938c3220F0
+Delegating a vote
+Awaiting confirmations
+Transaction completed. Hash: 0x1fe972d6ea4d59a7ff63a230ac81b1be181cf6228ad8afde25f885b8ae3c08b9
+
+
+
+~/SolBoot/lesson8/08-Tokenized-Votes-live-lesson/Project$ yarn ts-node scripts/delegateVotes.ts 0x75940107CB4FF33F41178C3e9958944052A856d9 0xd1028e56929e88f573A4DAe47aB528A09F98fA82
+Using address 0x4cd3400fbb3fA0Fb8Dc3d265ECA079938c3220F0
+Wallet balance 9.938082372710896
+Attaching ballot contract interface to address 0x75940107CB4FF33F41178C3e9958944052A856d9
+Delegating a vote
+Awaiting confirmations
+Transaction completed. Hash: 0xd2e228339b2001c3a108a1fd22ee35d151be95621edf2687039a548f2ff85068
+
+
+~/SolBoot/lesson8/08-Tokenized-Votes-live-lesson/Project$ yarn ts-node scripts/castVote.ts 0xC19878d3598826bD2EadE08b4b2f4117ba5D6072 1 200000
+Using address 0x4cd3400fbb3fA0Fb8Dc3d265ECA079938c3220F0
+Wallet balance 9.938050224710747
+Attaching ballot contract interface to address 0xC19878d3598826bD2EadE08b4b2f4117ba5D6072
+Casting a vote
+Awaiting confirmations
+Transaction completed. Hash: 0x7c90b9d23133a45fb4fd354c8706059c85a507a3150f862153b2db4a49f21f8b
+
+
+~/SolBoot/lesson8/08-Tokenized-Votes-live-lesson/Project$ yarn ts-node scripts/queryProposals.ts 0xC19878d3598826bD2EadE08b4b2f4117ba5D6072
+Using address 0x4cd3400fbb3fA0Fb8Dc3d265ECA079938c3220F0
+Wallet balance 9.93797188721038
+Attaching ballot contract interface to address 0xC19878d3598826bD2EadE08b4b2f4117ba5D6072
+Here are the proposals associated with their number of votes : 
+The proposal number 0 is pizza and it has 0 votes in the ballot
+The proposal number 1 is popcorn and it has 200001 votes in the ballot
+The proposal number 2 is lasagna and it has 0 votes in the ballot
+We have seen all the array values.
+
