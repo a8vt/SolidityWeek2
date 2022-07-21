@@ -98,7 +98,7 @@ The proposal number 2 is lasagna and it has 0 votes in the ballot
 We have seen all the array values.
 
 ---------
-I added a listener event in the CastVote.ts file. 
+I added a listener event in the castVote.ts file. 
 ~/SolBoot/lesson8/08-Tokenized-Votes-live-lesson/Project$ yarn ts-node scripts/castVote.ts 0xC19878d3598826bD2EadE08b4b2f4117ba5D6072 1 1
 Using address 0x4cd3400fbb3fA0Fb8Dc3d265ECA079938c3220F0
 Wallet balance 9.937763966209411
