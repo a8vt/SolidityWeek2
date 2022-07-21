@@ -86,8 +86,7 @@ Casting a vote
 Awaiting confirmations
 Transaction completed. Hash: 0x7c90b9d23133a45fb4fd354c8706059c85a507a3150f862153b2db4a49f21f8b
 
------
-I added a listener event in the CastVote.ts file.
+
 ~/SolBoot/lesson8/08-Tokenized-Votes-live-lesson/Project$ yarn ts-node scripts/queryProposals.ts 0xC19878d3598826bD2EadE08b4b2f4117ba5D6072
 Using address 0x4cd3400fbb3fA0Fb8Dc3d265ECA079938c3220F0
 Wallet balance 9.93797188721038
@@ -98,7 +97,8 @@ The proposal number 1 is popcorn and it has 200001 votes in the ballot
 The proposal number 2 is lasagna and it has 0 votes in the ballot
 We have seen all the array values.
 
-  
+---------
+I added a listener event in the CastVote.ts file. 
 ~/SolBoot/lesson8/08-Tokenized-Votes-live-lesson/Project$ yarn ts-node scripts/castVote.ts 0xC19878d3598826bD2EadE08b4b2f4117ba5D6072 1 1
 Using address 0x4cd3400fbb3fA0Fb8Dc3d265ECA079938c3220F0
 Wallet balance 9.937763966209411
